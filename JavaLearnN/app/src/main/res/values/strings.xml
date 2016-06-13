@@ -1,0 +1,273 @@
+<resources>
+    <string name="app_name">JAVA LearnN</string>
+    <string name="banner_ad_unit_id">ca-app-pub-5602660934198746/3955209511</string>
+    <!-- <string name="device_id">1BD9416AB84480300AB939820F007059</string> -->
+    <string name="java_concept">Java Concept</string>
+    <string name="java_exams">Java Exams \nComing Soon..</string>
+
+    <string-array name="fragment_java_ss1">
+        <item>First App</item>
+        <item>If Statement</item>
+        <item>Switch Case</item>
+        <item>Loop control</item>
+    </string-array>
+
+    <string-array name="fragment_java_ss2">
+        <item>Encapsulation</item>
+        <item>Inheritance</item>
+        <item>Polymorphism</item>
+    </string-array>
+
+    <string-array name="fragment_java_ss3">
+        <item>Map (HashMap)</item>
+        <item>List (ArrayList)</item>
+        <item>Set (HashSet)</item>
+    </string-array>
+
+    <!-- fragment java main -->
+    <string name="fragment_java_main">
+        <![CDATA[
+        <p><b>Java programming language, </b>
+        This learning is for beginners who want to learn on mobile device. Learn the basics in simple and step by step.</p>
+        ]]>
+    </string>
+
+    <!-- fragment java ss1 - 01 -->
+    <string name="ss1_java_01_01">
+        <![CDATA[
+        1&nbsp;&nbsp;<b>public</b> class Main {<br>
+        2&nbsp;&nbsp;&nbsp;&nbsp;<b>private</b> static void main(String[] args) {<br>
+        3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>System.out.println(\"Hello World.\");</b><br>
+        4&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+        5&nbsp;&nbsp;}<br>
+        ]]>
+    </string>
+    <string name="ss1_java_01_02"> <![CDATA[ &nbsp;&nbsp;&nbsp;&nbsp;Print Hello World code in Java. for first Java Application. Above is first console application for beginners. You can run a code inside main method for Java programming. <br>]]></string>
+
+    <!-- fragment java ss1 - 02 -->
+    <string name="ss1_java_02_01">
+<![CDATA[
+1&nbsp;&nbsp;import java.util.Scanner;<br>
+2&nbsp;&nbsp;<b>public</b> class AppMain {<br>
+3&nbsp;&nbsp;&nbsp;&nbsp;<b>public</b> static void main(String[] args) {<br>
+4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Scanner sc = new Scanner(System.in);<br>
+5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>System.out.print(\"Enter Score : \");</b><br>
+6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;calculate(sc.nextInt());<br>
+7&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+8&nbsp;&nbsp;&nbsp;&nbsp;<b>public</b> static void calculate(int score) {<br>
+9&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (score >= 80) { // score > 80 <br>
+10&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>System.out.println(\"Grade A\");</b><br>
+11&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} else if (score >= 70) { // 70 - 79<br>
+12&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>System.out.println(\"Grade B\");</b><br>
+13&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} else if (score >= 60) { // 60 - 69<br>
+14&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>System.out.println(\"Grade C\");</b><br>
+15&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} else if (score >= 50) { // 50 - 59<br>
+16&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>System.out.println(\"Grade D\");</b><br>
+17&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} else { // other<br>
+18&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>System.out.println(\"Grade F\");</b><br>
+19&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+20&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+21&nbsp;&nbsp;}<br>
+22&nbsp;&nbsp;<br>
+]]>
+    </string>
+
+    <string name="ss1_java_02_02"> <![CDATA[
+&nbsp;&nbsp;Second example to show if statement for calculating grade from the score. The method calculates from class AppMain is passed by value to perform and print grade to console application
+<br><br>
+<b>Syntax 1</b><br>
+&nbsp;&nbsp;if ( condition ) {  <br>
+&nbsp;&nbsp;&nbsp;&nbsp;statement &#8230; <br>
+&nbsp;&nbsp;} <br>
+<br>
+<b>Syntax 2</b><br>
+&nbsp;&nbsp;if ( condition 1 ) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;statement 1 &#8230; <br>
+&nbsp;&nbsp;} else if ( condition 2 ) { <br>
+&nbsp;&nbsp;&nbsp;&nbsp;statement 2 &#8230; <br>
+&nbsp;&nbsp;} else if ( condition 3) { <br>
+&nbsp;&nbsp;&nbsp;&nbsp;statement 3 &#8230; <br>
+&nbsp;&nbsp;} <br>
+<br>
+<b>Syntax 3</b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;boolean result = condition ? true : false;<br>
+<br>
+if the statement is performed within the block when the condition is correct
+<br>]]></string>
+
+    <!-- fragment java ss1 - 03 -->
+    <string name="ss1_java_03_01">
+<![CDATA[
+1&nbsp;&nbsp;<b>public</b> class AppMain {<br>
+2&nbsp;&nbsp;&nbsp;&nbsp;<b>public</b> static void main(String[] args) {<br>
+3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;byte number = 0;<br>
+4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;convertNumber(number);<br>
+5&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+6&nbsp;&nbsp;&nbsp;&nbsp;<b>public</b> static void convertNumber(int number) {<br>
+7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;switch (number) {<br>
+8&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;case 0: System.out.println(\"one\");<br>
+9&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br>
+10&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;case 1: System.out.println(\"two\");<br>
+11&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br>
+12&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;default: System.out.println(\"other\");<br>
+13&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br>
+14&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+15&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+16&nbsp;&nbsp;}<br>
+]]>
+    </string>
+
+    <string name="ss1_java_03_02">
+        <![CDATA[ &nbsp;&nbsp;Java the switch statement is decision for a variable to be equals list to case. Which switch accepts to data type primitive type is byte, short, int and char and wrapper - class is Byte, Short, Integer, and Character for JDK greater than 7 you can String is decision for case statement. <br>]]>
+    </string>
+
+    <!-- fragment java ss1 - 04 -->
+    <string name="ss1_java_04_01">
+<![CDATA[
+1&nbsp;&nbsp;<b>public</b> class AppMain {<br>
+2&nbsp;&nbsp;&nbsp;&nbsp;<b>public</b> static void main(String[] args) {<br><br>
+3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int i = 0;<br>
+4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>while</b> (i < 2) {<br>
+5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(\"while to : \" + i);<br>
+6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i++;<br>
+7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br><br>
+8&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i = 0;<br>
+9&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>do</b> {<br>
+10&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(\"do while to : \" + i);<br>
+11&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i++;<br>
+12&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} <b>while</b> (i < 2);<br><br>
+13&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>for</b> (i = 0; i < 2; i++) {<br>
+14&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(\"for to : \" + i);<br>
+15&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br><br>
+16&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+17&nbsp;&nbsp;}<br>
+]]>
+    </string>
+    <string name="ss1_java_04_02">
+<![CDATA[
+&nbsp;&nbsp;&nbsp;&nbsp;Print to console application to: <br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;while to : 0 <br>
+&nbsp;&nbsp;&nbsp;&nbsp;while to : 1 <br>
+&nbsp;&nbsp;&nbsp;&nbsp;do while to : 0 <br>
+&nbsp;&nbsp;&nbsp;&nbsp;do while to : 1 <br>
+&nbsp;&nbsp;&nbsp;&nbsp;for to : 0 <br>
+&nbsp;&nbsp;&nbsp;&nbsp;for to : 1 <br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;Loop control for Java to above for begin develop Java programming, Because before develop Java edition such as J2SE (Standard Edition), J2EE (Enterprise Edition) and J2ME (Mobile Edition). It is necessary to have a based on knowledge. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Next chapter. Learn about the basics of <b>OOP concept</b>. And show a sample code for Java application. <br>
+]]>
+    </string>
+
+    <!-- fragment java ss2 - 01 -->
+    <string name="ss2_java_01_01">
+<![CDATA[
+&nbsp;&nbsp;&nbsp;&nbsp; <b>Encapsulation</b> is information hiding, Which change the access modifier to private and access by the method public (example code below). <br><br>
+1&nbsp;&nbsp;<b>public</b> class User {<br>
+2&nbsp;&nbsp;&nbsp;&nbsp;<b>private</b> String name;<br>
+3&nbsp;&nbsp;&nbsp;&nbsp;<b>private</b> String lastname;<br>
+4&nbsp;&nbsp;&nbsp;&nbsp;<b>private</b> Double salary;<br>
+5&nbsp;&nbsp;<br>
+6&nbsp;&nbsp;&nbsp;&nbsp;<b>public</b> String getName() { return name; }<br>
+7&nbsp;&nbsp;&nbsp;&nbsp;<b>public</b> void setName(String name) { this.name = name; }<br>
+8&nbsp;&nbsp;&nbsp;&nbsp;<br>
+9&nbsp;&nbsp;&nbsp;&nbsp;<b>public</b> String getLastname() { return lastname; }<br>
+10&nbsp;&nbsp;&nbsp;&nbsp;<b>public</b> void setLastname(String lastname) { this.lastname = lastname; }<br>
+11&nbsp;&nbsp;&nbsp;&nbsp;<br>
+12&nbsp;&nbsp;&nbsp;&nbsp;<b>public</b> Double getSalary() { return salary; }<br>
+13&nbsp;&nbsp;&nbsp;&nbsp;<b>public</b> void setSalary(Double salary) { this.salary = salary; }<br>
+14&nbsp;&nbsp;} <br>
+]]>
+    </string>
+    <string name="ss2_java_01_02">
+<![CDATA[
+&nbsp;&nbsp;&nbsp;&nbsp; Why must change access from public to private. For public access modifier you can design level access. But some information such as salary or password. You don\'t want other people to see the information or change data from the data object <b>(Class User in Above)</b>. <br>
+]]>
+    </string>
+
+    <!-- fragment java ss2 - 01 -->
+    <string name="ss2_java_02_01">
+<![CDATA[
+1&nbsp;&nbsp;<b>public</b> class ProgramTest {<br>
+2&nbsp;&nbsp;&nbsp;&nbsp;<b>public</b> static void main(String[] args) {<br>
+3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>SubClass</b> sub = <b>new SubClass();</b><br>
+4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sub.<b>getHellSuperClass();</b><br>
+5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sub.<b>getHelloSubClass();</b><br>
+6&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+7&nbsp;&nbsp;}<br>
+8&nbsp;&nbsp;<br>
+9&nbsp;&nbsp;class <b>SuperClass</b> {<br>
+10&nbsp;&nbsp;&nbsp;&nbsp;<b>public</b> void getHellSuperClass() {<br>
+11&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(\"SuperClass hello.\");<br>
+12&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+13&nbsp;&nbsp;}<br>
+14&nbsp;&nbsp;<br>
+15&nbsp;&nbsp;class <b>SubClass</b> extends <b>SuperClass</b> {<br>
+16&nbsp;&nbsp;&nbsp;&nbsp;<b>public</b> void getHelloSubClass() {<br>
+17&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(\"SubClass hello.\");<br>
+18&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+19&nbsp;&nbsp;}<br>
+]]>
+    </string>
+
+    <string name="ss2_java_02_02">
+<![CDATA[
+&nbsp;&nbsp;&nbsp;&nbsp; Print to console application to: <br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SuperClass hello. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SubClass hello. <br><br>
+&nbsp;&nbsp;&nbsp;&nbsp; <b>Inheritance</b> is the pass information from super class <b>(Parent Class)</b> to sub class <b>(child class).</b> So sub class to have  <b>getHellSuperClass()</b> method and <b>getHelloSubClass()</b> method for usability testing. <br>
+]]>
+    </string>
+
+    <!-- fragment java ss2 - 03 -->
+    <string name="ss2_java_03_01">
+<![CDATA[
+&nbsp;&nbsp;&nbsp;&nbsp; <b>Polymorphism</b> for concept use samples in your overloading method and overriding method <br><br>
+&nbsp;&nbsp;&nbsp;&nbsp; <b>1&nbsp;)&nbsp;Overriding</b> method <br><br>
+1&nbsp;&nbsp;<b>public</b> class ProgramTest {<br>
+2&nbsp;&nbsp;&nbsp;&nbsp;<b>public</b> static void main(String[] args) {<br>
+3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SubClass sub = new SubClass();<br>
+4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sub.getHellSuperClass();<br>
+5&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+6&nbsp;&nbsp;}<br>
+7&nbsp;&nbsp;<br>
+8&nbsp;&nbsp;class SuperClass {<br>
+9&nbsp;&nbsp;&nbsp;&nbsp;<b>public</b> void getHellSuperClass() {<br>
+10&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(\"SuperClass hello.\");<br>
+11&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+12&nbsp;&nbsp;}<br>
+13&nbsp;&nbsp;<br>
+14&nbsp;&nbsp;class SubClass extends SuperClass {<br>
+15&nbsp;&nbsp;&nbsp;&nbsp;<b>public</b> void getHellSuperClass() {<br>
+16&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(\"overriding Method Super class\");<br>
+17&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+18&nbsp;&nbsp;}<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp; The <b>overriding</b> method is replacing the method of super class to same name method between subclass and super class. <br><br>
+&nbsp;&nbsp;&nbsp;&nbsp; <b>2&nbsp;)&nbsp;overloading method vs overloading constructor</b> <br><br>
+
+1&nbsp;&nbsp;<b>public</b> class Dog {<br>
+2&nbsp;&nbsp;&nbsp;&nbsp;<br>
+3&nbsp;&nbsp;&nbsp;&nbsp;<b>public</b> Dog() {<br>
+4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(\"<b>constructor</b>\");<br>
+5&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+6&nbsp;&nbsp;&nbsp;&nbsp;<b>public</b> Dog(String dogName) {<br>
+7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(\"<b>overriding constructor</b> Dog()\");<br>
+8&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+9&nbsp;&nbsp;&nbsp;&nbsp;<br>
+10&nbsp;&nbsp;&nbsp;&nbsp;<b>public</b> void getBark() {<br>
+11&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(\"bok bok\");<br>
+12&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+13&nbsp;&nbsp;&nbsp;&nbsp;<b>public</b> void getBark(String dogName) {<br>
+14&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(\"<b>overriding method</b> getBark()\");<br>
+15&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+16&nbsp;&nbsp;&nbsp;&nbsp;<br>
+17&nbsp;&nbsp;}<br><br>
+The line 3 and 6 of the code above is <b>overloading constructor.</b>
+The line 10 and 13 of the code above is <b>overloading method.</b>
+For process when you call example below: </b></b>
+&nbsp;&nbsp;&nbsp;&nbsp; Dog dog = new Dog(); </b>
+&nbsp;&nbsp;&nbsp;&nbsp; Dog dog = new Dog("dog"); </b></b>
+Result to print console application: </b>
+&nbsp;&nbsp;constructor
+&nbsp;&nbsp;overriding constructor Dog()
+]]>
+    </string>
+</resources>
