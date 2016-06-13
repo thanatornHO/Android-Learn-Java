@@ -16,4 +16,4 @@ OOP Concept
 
 [Google Play](https://play.google.com/store/apps/details?id=javalearnn.comsci.java.thanatorn.com.javalearnn)
 
-![alt text](https://github.com/thanatornHO/Android-Learn-Java/blob/master/JavaLearnN/app/src/main/res/google_play.PNG "Logo Title Text 1")
+![alt text](https://github.com/thanatornHO/Android-Learn-Java/blob/master/JavaLearnN/app/src/main/res/google_play.PNG "")
